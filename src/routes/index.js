@@ -24,6 +24,7 @@ import paymentsRoutes from "../modules/payments/payments.routes.js";
 import adminRoutes from "../modules/admin/admin.routes.js";
 import dashboardRoutes from "../modules/dashboard/dashboard.routes.js";
 import statisticsRoutes from "../modules/statistics/statistics.routes.js";
+import researchSourcesRoutes from "../modules/research-sources/research-sources.routes.js";
 import authPlugin from "../modules/auth/auth.plugin.js";
 
 /**
@@ -62,4 +63,5 @@ export default async function rootRoutes(fastify, options) {
   fastify.register(dashboardRoutes, { prefix: '/dashboard' });
 
   fastify.register(statisticsRoutes, { prefix: '/statistics' });
+  fastify.register(researchSourcesRoutes, { prefix: '/research' });
 }
