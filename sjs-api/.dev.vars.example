@@ -1,0 +1,2 @@
+# Local wrangler dev only. This file is never deployed.
+DEV_AUTH_ENABLED=true
